@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <link rel="stylesheet" href="css/style.css">
     <title>Адепт | Кейсы</title>
 </head>
@@ -223,6 +226,8 @@
                     </div>
                 </div>
             </div>
+            <img class="points-1" src="img/points-1.svg" alt="">
+            <img class="points-2" src="img/points-2.svg" alt="">
         </section>
         <section class="guide">
             <div class="container guide__wrapper">
@@ -254,6 +259,12 @@
                             <input class="input__el" type="text">
                         </div>
                     </div>
+                    <div class="guide__form-footer">
+                        <p class="guide__form-accept">
+                            Нажимая на кнопку вы даете согласие <a href="">на обработку ваших персональных данных</a>
+                        </p>
+                        <button type="submit" class="click-btn orange-btn guide__form-btn">Получить гайд</button>
+                    </div>
                 </form>
             </div>
         </section>
@@ -262,7 +273,97 @@
                 <h2 class="blog__title">Блог по цифровизации стройки</h2>
                 <a class="page-link blog-link" href="">Перейти</a>
             </div>
+            <div class="swiper blog-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide post gray">
+                        <img class="post-preview" src="img/blog/01.png" alt="">
+                        <div class="post__info">
+                            <span class="post__info-date post-date">4 августа. 2021</span>
+                            <span class="post__info-category post-category">Инженерные изыскания</span>
+                        </div>
+                        <h3 class="post-title">Опубликованы индексы Минстроя на 3 квартал 2020</h3>
+                    </div>
+                    <div class="swiper-slide post orange">
+                        <img class="post-preview" src="img/blog/02.png" alt="">
+                        <div class="post__info">
+                            <span class="post__info-date post-date">4 августа. 2021</span>
+                            <span class="post__info-category post-category">Инженерные изыскания</span>
+                        </div>
+                        <h3 class="post-title">Опубликованы индексы Минстроя на 3 квартал 2020</h3>
+                    </div>
+                    <div class="swiper-slide post violet">
+                        <img class="post-preview" src="img/blog/03.png" alt="">
+                        <div class="post__info">
+                            <span class="post__info-date post-date">4 августа. 2021</span>
+                            <span class="post__info-category post-category">Инженерные изыскания</span>
+                        </div>
+                        <h3 class="post-title">Опубликованы индексы Минстроя на 3 квартал 2020</h3>
+                    </div>
+                    <div class="swiper-slide post turquoise">
+                        <img class="post-preview" src="img/blog/04.png" alt="">
+                        <div class="post__info">
+                            <span class="post__info-date post-date">4 августа. 2021</span>
+                            <span class="post__info-category post-category">Инженерные изыскания</span>
+                        </div>
+                        <h3 class="post-title">Опубликованы индексы Минстроя на 3 квартал 2020</h3>
+                    </div>
+                    <div class="swiper-slide post violet">
+                        <img class="post-preview" src="img/blog/03.png" alt="">
+                        <div class="post__info">
+                            <span class="post__info-date post-date">4 августа. 2021</span>
+                            <span class="post__info-category post-category">Инженерные изыскания</span>
+                        </div>
+                        <h3 class="post-title">Опубликованы индексы Минстроя на 3 квартал 2020</h3>
+                    </div>
+                </div>
+                <div class="swiper__nav blog-swiper__nav">
+                    <button class="btn-blue blog-swiper-prev swiper__nav-btn prev">
+                        <img src="img/icons/btn-left-arrow.svg" alt="">
+                    </button>
+                    <button class="btn-blue blog-swiper-next swiper__nav-btn next">
+                        <img src="img/icons/btn-right-arrow.svg" alt="">
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="clients">
+            <h2 class="clients__title">Более 10 000 клиентов используют программу Адепт </h2>
+            <div class="swiper clients-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/clients/01.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/clients/02.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/clients/03.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/clients/04.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/clients/05.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/clients/06.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/clients/07.png" alt="">
+                    </div>
+                </div>
+                <div class="swiper__nav clients-swiper__nav">
+                    <button class="btn-blue clients-swiper-prev swiper__nav-btn prev">
+                        <img src="img/icons/btn-left-arrow.svg" alt="">
+                    </button>
+                    <button class="btn-blue clients-swiper-next swiper__nav-btn next">
+                        <img src="img/icons/btn-right-arrow.svg" alt="">
+                    </button>
+                </div>
+            </div>
         </section>
     </main>
+
+    <script src="js/app.js"></script>
 </body>
 </html>

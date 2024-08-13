@@ -953,6 +953,7 @@ span {
         border-top-left-radius: 0;
         border-top-right-radius: 0;
         margin-top: -280px;
+        padding-bottom: 60px;
     }
     .blog__title {
         font-size: 28px;

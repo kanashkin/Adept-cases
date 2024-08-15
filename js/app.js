@@ -43,7 +43,22 @@ function clientsSwiper() {
     }
 }
 
+function animations() {
+    const targetElems = document.querySelectorAll('.animation-el')
+
+    if (targetElems.length) {
+        targetElems.forEach(function(el) {
+            window.addEventListener('scroll', function() {
+                if (el.getBoundingClientRect().top < window.innerHeight / 2) {
+                    el.classList.add('active')
+                }
+            })
+        })
+    }
+}
+
 window.addEventListener('DOMContentLoaded', function() {
     blogSwiper()
     clientsSwiper()
+    animations()
 })

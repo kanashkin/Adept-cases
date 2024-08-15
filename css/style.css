@@ -56,6 +56,17 @@ span {
 
 /* COMMON STYLES */
 
+.animation-el {
+    transform: translateY(15vh);
+    opacity: 0;
+    transition: .6s ease-in-out;
+}
+
+.animation-el.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .click-btn {
     border-radius: 4px;
     padding: 22px 0;
@@ -641,7 +652,7 @@ span {
 
 .guide__form {
     background: #ffffff;
-    padding: 60px 100px;
+    padding: 60px 80px;
     box-shadow: -10px 10px 67.7px 0px #FA633421,
     0px 0px 19.8px 0px #FA633457;
     border-radius: 15px;
@@ -683,6 +694,7 @@ span {
     justify-content: flex-end;
     align-items: center;
     gap: 10px;
+    margin-right: -1px;
 }
 
 .guide__form-accept {
@@ -788,6 +800,7 @@ span {
     .guide__form-footer {
         flex-direction: column;
         align-items: flex-end;
+        margin-right: 0;
     }
     .guide__form-inputs {
         margin-bottom: 30px;

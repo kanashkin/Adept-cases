@@ -44,17 +44,34 @@ function clientsSwiper() {
 }
 
 function animations() {
-    const targetElems = document.querySelectorAll('.animation-el')
+	const targetElems = document.querySelectorAll('.animation-el')
 
-    if (targetElems.length) {
-        targetElems.forEach(function(el) {
-            window.addEventListener('scroll', function() {
-                if (el.getBoundingClientRect().top < window.innerHeight / 2) {
-                    el.classList.add('active')
-                }
-            })
-        })
-    }
+	if (targetElems.length) {
+	
+		targetElems.forEach((el, index) => {
+			if (el.getBoundingClientRect().top < window.innerHeight) {
+				setTimeout(() => {
+					el.classList.add('active')
+				}, index * 500)
+			} else {
+				const observer = new IntersectionObserver(
+					entries => {
+						entries.forEach(entry => {
+							if (entry.isIntersecting) {
+								entry.target.classList.add('active')
+								observer.unobserve(entry.target) 
+							}
+						})
+					},
+					{
+						threshold: 0.1,
+					}
+				)
+
+				observer.observe(el)
+			}
+		})
+	}
 }
 
 window.addEventListener('DOMContentLoaded', function() {

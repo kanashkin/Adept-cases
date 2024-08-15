@@ -59,7 +59,7 @@ span {
 .animation-el {
     transform: translateY(15vh);
     opacity: 0;
-    transition: .6s ease-in-out;
+    transition: .6s all;
 }
 
 .animation-el.active {
@@ -432,14 +432,14 @@ span {
     background: rgba(255, 255, 255, 0.63);
 }
 
-.case.white .case-link:hover {
+.case.white:hover .case-link {
     background: #6899D8;
 }
-.case.white .case-link:hover path {
+.case.white:hover .case-link path {
     stroke: #ffffff;
 }
 
-.case.blue .case-link:hover {
+.case.blue:hover .case-link{
     background: #ffffff;
 }
 
@@ -669,7 +669,7 @@ span {
 .guide__form-inputs {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 36px;
+    gap: 12px 36px;
     margin-bottom: 18px;
 }
 
@@ -878,6 +878,11 @@ span {
 .blog-swiper {
     margin-left: 30px !important;
     margin-top: 40px;
+}
+
+.blog-swiper__nav button {
+    top: 29%;
+    transform: none;
 }
 
 .post-preview {

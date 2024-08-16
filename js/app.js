@@ -47,7 +47,6 @@ function animations() {
 	const targetElems = document.querySelectorAll('.animation-el')
 
 	if (targetElems.length) {
-	
 		targetElems.forEach((el, index) => {
 			if (el.getBoundingClientRect().top < window.innerHeight) {
 				setTimeout(() => {
@@ -59,7 +58,7 @@ function animations() {
 						entries.forEach(entry => {
 							if (entry.isIntersecting) {
 								entry.target.classList.add('active')
-								observer.unobserve(entry.target) 
+								observer.unobserve(entry.target)
 							}
 						})
 					},

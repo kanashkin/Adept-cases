@@ -59,7 +59,7 @@ span {
 .animation-el {
     transform: translateY(15vh);
     opacity: 0;
-    transition: .6s all;
+    transition: .7s ease-out;
 }
 
 .animation-el.active {
